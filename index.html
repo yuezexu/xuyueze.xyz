@@ -153,6 +153,39 @@
 
 
     <script src="script.js"></script>
+
+    <!-- Chat UI -->
+    <!-- Chat Bubble Button -->
+    <button id="chat-toggle" aria-label="Open chat">
+        <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12z"/></svg>
+    </button>
+
+    <!-- Chat Drawer -->
+    <div id="chat-drawer">
+        <div id="chat-header">
+            <div id="chat-header-title">
+                <span class="dot"></span>
+                <span class="zh">AI 助手</span>
+                <span class="en">AI Assistant</span>
+            </div>
+            <button id="chat-close" aria-label="Close chat">✕</button>
+        </div>
+        <div id="chat-messages">
+            <div class="welcome-msg">
+                <div class="zh">你好！我是 xuyueze.xyz 的 AI 助手，有什么可以帮助你的？</div>
+                <div class="en">Hi! I'm the xuyueze.xyz AI assistant. How can I help you?</div>
+            </div>
+        </div>
+        <div id="chat-input-area">
+            <input type="text" id="chat-input" placeholder="输入消息..." class="zh" autocomplete="off">
+            <input type="text" id="chat-input-en" placeholder="Type a message..." class="en" autocomplete="off">
+            <button id="chat-send" disabled aria-label="Send">
+                <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="chat.js"></script>
 </body>
 
 </html>
